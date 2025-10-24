@@ -36,7 +36,6 @@ func (ds *DaySteps) Parse(datastring string) (err error) {
 		return
 	}
 
-	stepsStr = strings.TrimSpace(sliceData[0])
 	if stepsStr == "" || stepsStr == "-" || stepsStr == "+" {
 		err = errors.New("неверный формат количества шагов")
 		return
